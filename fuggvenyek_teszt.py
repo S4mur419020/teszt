@@ -75,7 +75,7 @@ def cigar_party_teszt2():
     cigars_lista=[30,40,44.5,60,72,-30,40,48,60,72]
     is_weekend_lista=[True,True,True,True,True,False,False,False,False,False]
     vart_lista_lista=[False,True,True,True,True,False,True,True,True,False]
-    for i in range(1,len(cigars_lista),1):
+    for i in range(0,len(cigars_lista),1):
         print(f"{i+1}. Teszteset")
         cigars=cigars_lista[i]
         is_weekend:bool=is_weekend_lista[i]
@@ -83,4 +83,4 @@ def cigar_party_teszt2():
         kapott:bool=fuggvenyek.cigar_party(cigars, is_weekend)
         print(f"cigi: {cigars} | hétvége: {is_weekend} | várt: {vart} | kapott: {kapott} | eredmeny: {vart==kapott}")
     
-cigar_party_teszt()
+cigar_party_teszt2()
